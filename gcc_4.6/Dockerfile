@@ -1,4 +1,4 @@
-FROM ubuntu:precise
+FROM ubuntu:trusty
 
 LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
