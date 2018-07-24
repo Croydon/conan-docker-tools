@@ -5,28 +5,28 @@ LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 RUN dpkg --add-architecture i386 \
     && apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \
-       python-dev=2.7.* \
-       sudo=1.8.* \
-       binutils=2.29.* \
-       wget=1.19.* \
-       git=1:2.14.* \
-       vim=2:8.0.* \
-       libc6-dev-i386=2.26-* \
-       linux-libc-dev:i386=4.13.* \
-       g++-7-multilib=7.2.* \
-       libgmp-dev=2:6.1.* \
-       libmpfr-dev=3.1.* \
-       libmpc-dev=1.0.* \
-       libc6-dev=2.26* \
-       nasm=2.13.* \
-       dh-autoreconf=14 \
-       valgrind=1:3.13.* \
-       ninja-build=1.7.* \
-       libffi-dev=3.2.* \
-       libssl-dev=1.0.2* \
+       python-dev=2.7.15~rc1-1 \
+       sudo=1.8.21p2-3ubuntu1 \
+       binutils=2.* \
+       wget=1.19.4-1ubuntu2.1 \
+       git \
+       vim=2:8.0.1453-1ubuntu1 \
+       libc6-dev-i386=2.27-3ubuntu1 \
+       linux-libc-dev:i386=4.* \
+       g++-7-multilib \
+       libgmp-dev=2:6.1.2+dfsg-2 \
+       libmpfr-dev=4.0.1-1 \
+       libmpc-dev=1.1.0-1 \
+       libc6-dev=2.27-3ubuntu1 \
+       nasm=2.13.02-0.1 \
+       dh-autoreconf=17 \
+       valgrind=1:3.13.0-2ubuntu2 \
+       ninja-build=1.8.2-1 \
+       libffi-dev=3.2.1-8 \
+       libssl-dev=1.* \
        pkg-config=0.29.1-0ubuntu2 \
-       subversion=1.9.7-2ubuntu1 \
-       ca-certificates=20170717 \
+       subversion=1.9.7-4ubuntu1 \
+       ca-certificates=20180409 \
     && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 100 \
     && update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++-7 100 \
     && ln -s /usr/include/locale.h /usr/include/xlocale.h \
