@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu:bionic
 
 LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
