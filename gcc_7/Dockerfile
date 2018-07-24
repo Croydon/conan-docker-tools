@@ -1,4 +1,4 @@
-FROM ubuntu:artful
+FROM ubuntu:bionic
 
 LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
