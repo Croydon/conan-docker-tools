@@ -30,9 +30,11 @@ RUN choco install --no-progress --yes microsoft-build-tools --version 12.0.21005
 
 RUN Get-ChildItem -Path 'C:\\Program Files (x86)\\MSBuild\\12.0\\Bin\\'
 
+RUN RefreshEnv
+
 RUN setx PATH 'C:\\Program Files (x86)\\MSBuild\\12.0\\Bin\\msbuild.exe;%PATH%'
 
-RUN RefreshEnv
+
 
 WORKDIR "C:/Users/ContainerAdministrator"
 ENTRYPOINT ["C:\\Program Files (x86)\\MSBuild\\12.0\\Bin\\msbuild.exe"]
