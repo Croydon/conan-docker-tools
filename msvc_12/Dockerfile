@@ -34,6 +34,6 @@ RUN RefreshEnv
 
 RUN setx PATH 'C:\\Program Files (x86)\\MSBuild\\12.0\\Bin\\msbuild.exe;%PATH%'
 
-RUN msbuild.exe /version
+CMD ["msbuild.exe" "/version"]
 
 WORKDIR "C:/Users/ContainerAdministrator"
