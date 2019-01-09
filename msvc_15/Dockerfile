@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM microsoft/dotnet-framework:4.7.2-runtime-20180710-windowsservercore-1803
 
 LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
