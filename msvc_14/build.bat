@@ -1,1 +1,1 @@
-docker build --no-cache --target msvc14 -t conanio/msvc14 .
+docker build --no-cache -m 2GB --target msvc14 -t conanio/msvc14 .
