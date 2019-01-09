@@ -9,6 +9,7 @@ jobs:
       versionSpec: '3.6'
   - script: |
       choco install docker-compose
+      choco install python3
       python build.py
     env:
       DOCKER_PASSWORD: $(DOCKER_PASSWORD)
