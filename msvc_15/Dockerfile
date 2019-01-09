@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore:ltsc2016
+FROM microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
 
 LABEL maintainer="Luis Martinez de Bartolome <luism@jfrog.com>"
 
