@@ -4,9 +4,6 @@ jobs:
     vmImage: 'win1803'
   timeoutInMinutes: 120
   steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '3.6'
   - script: |
       choco install docker-compose
       choco install python3
