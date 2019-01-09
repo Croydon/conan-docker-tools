@@ -7,7 +7,7 @@ jobs:
   - script: |
       choco install docker-compose
       choco install --no-progress --yes --version=3.7.2 python3
-      export "PATH=C:\Python37;C:\Python37\Scripts;%PATH%
+      set "PATH=C:\Python37;C:\Python37\Scripts;%PATH%"
       python build.py
     env:
       DOCKER_PASSWORD: $(DOCKER_PASSWORD)
